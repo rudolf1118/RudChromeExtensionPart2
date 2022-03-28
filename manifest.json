@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Rud Facebook extension",
+  "version": "1.00.12",
+  "description": "Internship extension part 2",
+  "icons": {
+    "16": "./icon/icon.png",
+    "48": "./icon/icon.png",
+    "128": "./icon/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/"
+      ],
+      "js": [
+        "source.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
